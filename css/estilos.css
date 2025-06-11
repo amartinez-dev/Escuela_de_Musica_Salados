@@ -1,0 +1,211 @@
+/* ==========================================
+   VARIABLES Y PALETA DE COLORES
+   ========================================== */
+   :root {
+    --rojo-principal: rgba(195, 55, 64, 1);
+    --rojo-hover: #D62828;
+    --beige: rgba(215, 162, 120, 1);
+    --marron: rgba(105, 67, 58, 1);
+    --azul-piano: rgba(103, 148, 153, 1);
+    --blanco: #ffffff;
+    --gris-oscuro: #1a1a1a;
+    --gris-claro: #fdfdfd;
+    --negro: #000000;
+    --transparente-negro: rgba(0, 0, 0, 0.6);
+  }
+  
+  /* ==========================================
+     ESTILOS GENERALES
+     ========================================== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--negro);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  @font-face {
+    font-family: 'Mecaros';
+    src: url('fonts/mecaros.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* ==========================================
+     NAVBAR
+     ========================================== */
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: fixed;
+    padding: 20px 0 0 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-items {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu-items li {
+    margin: 0 20px;
+  }
+  
+  .menu-items a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-items a.active {
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 4px;
+    color: var(--rojo-principal) !important;
+  }
+  
+  .menu-light a {
+    color: black !important;
+  }
+  
+  .menu-light a:hover {
+    color: var(--rojo-principal) !important;
+  }
+  
+  .menu-dark a {
+    color: white !important;
+  }
+  
+  .menu-dark a:hover {
+    color: var(--rojo-principal) !important;
+  }
+  
+  .logo-blanco,
+  .fb-blanco,
+  .ig-blanco,
+  .wa-blanco {
+    display: none;
+  }
+  
+  .logo-blanco img,
+  .logo-negro img {
+    width: 120px;
+  }
+  
+  .fb-negro img,
+  .fb-blanco img,
+  .ig-negro img,
+  .ig-blanco img,
+  .wa-negro img,
+  .wa-blanco img {
+    width: 25px;
+    margin-left: 20px;
+  }
+  
+  /* ==========================================
+     INICIO
+     ========================================== */
+  .inicio {
+    position: relative;
+    background-image: linear-gradient(rgba(196, 196, 196, 0.568)), url("../img/GALERIA/img9.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    color: black;
+  }
+  
+  .inicio img {
+    position: absolute;
+    z-index: 1;
+  }
+  
+  #vectorS {
+    top: 150px;
+    left: -150px;
+    width: 1700px;
+    opacity: 0.9;
+    animation: fadeInFromTop 1.5s ease-in-out;
+  }
+  
+  #vectorInicio {
+    bottom: 0px;
+    opacity: 1;
+  }
+  
+  .contenido-inicio {
+    position: relative;
+    max-width: 1200px;
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+    top: 20px;
+    text-align: left;
+    z-index: 2;
+    animation: fadeInFromTop 1.5s ease-in-out;
+  }
+  
+  .contenido-inicio h1 {
+    color: var(--rojo-principal);
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .contenido-inicio h3 {
+    font-size: 25px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+  }
+  
+  .contenido-inicio h3 span {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .boton-inicio {
+    position: absolute;
+    top: 60px;
+    padding-top: 200px;
+  }
+  
+  .contenido-inicio a {
+    background-color: var(--rojo-principal);
+    color: white;
+    padding: 15px 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    border-radius: 5px;
+  }
+  
+  .contenido-inicio a:hover {
+    background-color: var(--rojo-hover);
+  }
+  
+  /* Las demás secciones continúan... */
+  
